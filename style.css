@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    padding: 10px 50px 50px 50px;
+}
+
+.ttl-amt{
+    margin-top: 20px;
+    width: 70%;
+}
+
+.transaction{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.history{
+    width: 49%;
+}
+.extras{
+    width: 49%;
+}
+
+table{
+    width: 100%;
+}
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  .modal{
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 100vh;
+    background-color: #000000c4;
+  }
+
+  .modal-main{
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .modal-card{
+    background: #ffffff;
+    border: 1px solid;
+    width: 45%;
+    height: auto;
+    padding: 34px;
+  }
+
+  textarea{
+    height: 50px;
+    width: 50%;
+    display: none;
+    margin-top: 10px;
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    outline: none;
+  }
+  #price-input
+  {
+    text-align: center;
+    width: 50%;
+    margin-top: 10px;
+    height: 25px;
+    outline: none;
+  }
+  button{
+    margin-top: 10px;
+    display: block;
+    width: 45%;
+    cursor: pointer;
+  }
+
+  input,label{
+    cursor: pointer;
+    outline: none;
+  }
+
+  .persons-sec > div{
+    margin-top: 10px;
+  }
+  

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kodaikanal Trip Sheet  <span class="cliclMe" onclick="toggleModal()">Ahh!!!</span></h1>
+        <div style="display: flex;justify-content: space-between;margin-top: 20px;">
+            <div class="ttl-amt" style="width: 100%;">
+                <h4>Total Amount Rs:<span class="total">25000</span> <span >Remaining Ammount Rs:<span class="remain"></span></span> </h4>
+                <div class="transaction">
+                    <div class="history">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>spent reason</th>
+                                    <th>Rs</th>
+                                </tr>
+                            </thead>
+                            <tbody class="history-body">
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="extras">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Spent by</th>
+                                    <th>spent reason</th>
+                                    <th>Rs</th>
+                                </tr>
+                            </thead>
+                            <tbody class="extras-body">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal" style="display: none;">
+        <div class="modal-main">
+            <div class="modal-card">
+                <div style="display: flex;justify-content: space-evenly;" class="modal-container">
+                    <div class="persons-sec" >
+                        <p style="margin-bottom: 10px;"><u>Select the person</u> </p>
+                        <div>
+                            <input type="radio" id="p1" onclick="handleClick(this)" name="selectedPerson" value="Abilesh">
+                            <label for="p1">Abilesh</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="p2" onclick="handleClick(this)"  name="selectedPerson" value="Hari">
+                            <label for="p2">Hari</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="p3" onclick="handleClick(this)"  name="selectedPerson" value="Karthi">
+                            <label for="p3">Karthi</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="p4" onclick="handleClick(this)"  name="selectedPerson" value="Nawin">
+                            <label for="p4">Nawin</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="p5" onclick="handleClick(this)"  name="selectedPerson" value="Pranav">
+                            <label for="p5">Pranav</label>
+                        </div>            
+                    </div> 
+                    <div class="persons-sec">
+                        <p style="margin-bottom: 10px;"><u> spent type</u> </p>
+                        <div>
+                            <input type="radio" id="w1" onclick="handleClick1(this)"  name="spentType" value="Tea Kada">
+                            <label for="w1">Tea Kada</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="w2" onclick="handleClick1(this)"  name="spentType" value="Food">
+                            <label for="w2">Food</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="w3" onclick="handleClick1(this)" name="spentType" value="Petrol">
+                            <label for="w3">Petrol</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="w5" onclick="handleClick1(this)" name="spentType" value="Others">
+                            <label for="w5">Others</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="w4" onclick="handleClick1(this)" name="spentType" value="Extras">
+                            <label for="w4">Extras</label>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex;flex-direction: column;align-items: center;">
+                    <textarea  name="" id="desc" cols="30" rows="10"></textarea>
+                    <input id="price-input"  type="number">
+                    <button class="btn"  onclick="saveData()">Save</button>
+                    <button class="btn"  onclick="toggleModal()">Cancel</button>
+                </div>
+            </div>
+        </div>        
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
